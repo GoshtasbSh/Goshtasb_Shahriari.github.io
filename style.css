@@ -12,6 +12,21 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+.progress-container {
+    height: 8px;
+    width: 100%;
+    background: rgb(126, 14, 14);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #b12323;
+    width: 3%;
+}
+
 .social-icons {
     margin-top: 10px;
 }
@@ -31,13 +46,14 @@ footer.footer {
     background: black;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
 }
+
 hr {
     border: 0;
     border-top: 2px solid #ccc;
