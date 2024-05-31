@@ -23,7 +23,7 @@ h1, h2 {
 
 .progress-bar {
     height: 4px;
-    background: red;
+    background: green;
     width: 0%;
 }
 
