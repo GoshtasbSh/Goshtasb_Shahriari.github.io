@@ -4,49 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Webpage</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Webpage</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">[Your Name]</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cv">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#teaching">Teaching</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     
-    <main>
-        <section id="about">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h1><strong>[Your Name]</strong></h1>
+                <p>Hi! This is [Your Name], a [Your Title/Profession].</p>
+                <p>Brief description about yourself and your research interests.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="your-photo.jpg" class="img-fluid rounded" alt="[Your Name]">
+            </div>
+        </div>
+        
+        <div id="about" class="mt-5">
             <h2>About Me</h2>
-            <p>Hi, I'm [Your Name]. I'm a [Your Profession] with a passion for [Your Interests].</p>
-        </section>
+            <p>More detailed information about yourself.</p>
+        </div>
         
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project 1</h3>
-                    <p>Description of project 1.</p>
-                </li>
-                <li>
-                    <h3>Project 2</h3>
-                    <p>Description of project 2.</p>
-                </li>
-                <!-- Add more projects as needed -->
-            </ul>
-        </section>
+        <div id="cv" class="mt-5">
+            <h2>CV</h2>
+            <p>Link to your CV or detailed CV information.</p>
+        </div>
         
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        </section>
-    </main>
+        <div id="publications" class="mt-5">
+            <h2>Publications</h2>
+            <p>List of your publications.</p>
+        </div>
+        
+        <div id="teaching" class="mt-5">
+            <h2>Teaching</h2>
+            <p>Information about your teaching experience.</p>
+        </div>
+        
+        <footer class="mt-5">
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+            <p>For any inquiries, feel free to contact me.</p>
+        </footer>
+    </div>
     
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
